@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoubleSeaterSofa - Furniture Store</title>
+    <link rel="stylesheet" href="fur.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Furniture Store</div>
+        <nav>
+            <ul>
+                <li><a href="fur.html">Home</a></li>
+                <li><a href="sofas.html">Back to Sofas</a></li>
+                <li><a href="#" id="cart-button">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-container">
+            <img src="2-seater-sofa.webp" alt="Double Seater Sofa" class="product-image">
+            <div class="product-info">
+                <h2>Double Seater Sofa</h2>
+                <p><strong>Price:</strong> $799.99</p>
+                <p><strong>Description:</strong> This double seater sofa is designed for both comfort and elegance.</p>
+                <p><strong>Dimensions:</strong> 65" x 36" x 40"</p>
+                <p><strong>Material:</strong> solid wood frame & leather.</p>
+                <button class="add-to-cart" data-name="Luxury Sofa" data-price="499.99">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart-container" style="display: none;">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <button id="close-cart">Close</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Furniture Store. All rights reserved.</p>
+    </footer>
+
+    <script src="fur.js"></script>
+</body>
+</html>

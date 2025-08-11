@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Sofa - Furniture Store</title>
+    <link rel="stylesheet" href="fur.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Furniture Store</div>
+        <nav>
+            <ul>
+                <li><a href="fur.html">Home</a></li>
+                <li><a href="sofas.html">Back to Sofas</a></li>
+                <li><a href="#" id="cart-button">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-container">
+            <img src="single-seater-sofa.webp" alt="Luxury Sofa" class="product-image">
+            <div class="product-info">
+                <h2>Luxury Sofa</h2>
+                <p><strong>Price:</strong> $499.99</p>
+                <p><strong>Description:</strong> This luxury sofa is designed for both comfort and style, featuring high-quality upholstery, durable frame, and a modern aesthetic.</p>
+                <p><strong>Dimensions:</strong> 85" x 35" x 30"</p>
+                <p><strong>Material:</strong> Premium Fabric & Solid Wood</p>
+                <button class="add-to-cart" data-name="Luxury Sofa" data-price="499.99">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart-container" style="display: none;">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <button id="close-cart">Close</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Furniture Store. All rights reserved.</p>
+    </footer>
+
+    <script src="fur.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>allProducts - Furniture Store</title>
+    <link rel="stylesheet" href="fur.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Furniture Store</div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="chairs.html">Chairs</a></li>
+                        <li><a href="sofas.html">Sofas</a></li>
+                        <li><a href="beds.html">Beds</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="all-products.html">All Products</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Account</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" id="cart-button">cart🛒 (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="product-grid">
+            <div class="product">
+                <img src="kingsize-bed.webp" alt="Bed 1">
+                <h3>King Size Bed</h3>
+                <p>$799.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=1" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="queensize bed.webp" alt="Bed 2">
+                <h3>Queen Size Bed</h3>
+                <p>$699.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=2" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="single-bed.webp" alt="Bed 3">
+                <h3>Single Bed</h3>
+                <p>$499.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=3" class="view-details">View Details</a>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="modern.webp" alt="Chair 1">
+                <h3>Modern Chair</h3>
+                <p>$149.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=4" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="classicWoodenChair.webp" alt="Chair 2">
+                <h3>Classic Wooden Chair</h3>
+                <p>$129.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=5" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="armchair-isolated.webp" alt="Chair 3">
+                <h3>Luxury Armchair</h3>
+                <p>$199.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=6" class="view-details">View Details</a>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="single-seater-sofa.webp" alt="Sofa 4">
+                <h3>Single Seater Sofa</h3>
+                <p>$499.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=7" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="corner-sofa.webp" alt="Sofa 5">
+                <h3>Corner Sofa</h3>
+                <p>$599.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=8" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="2-seater-sofa.webp" alt="Sofa 6">
+                <h3>Double Seater Sofa</h3>
+                <p>$799.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=9" class="view-details">View Details</a>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="murphy-bed.avif" alt="Murphy Bed">
+                <h3>Murphy Bed</h3>
+                <p>$799.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=10" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="poster-bed.webp" alt="Poster Bed">
+                <h3>Poster Bed</h3>
+                <p>$699.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=11" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="panel-bed.webp" alt="Panel Bed">
+                <h3>Panel Bed</h3>
+                <p>$499.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=12" class="view-details">View Details</a>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="study-chair.png" alt="Study Chair">
+                <h3>Study Chair</h3>
+                <p>$149.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=13" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="baby-chair.jpg" alt="Baby Chair">
+                <h3>Baby Chair</h3>
+                <p>$129.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=14" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="high-chair.webp" alt="High Chair">
+                <h3>High Chair</h3>
+                <p>$199.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=15" class="view-details">View Details</a>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="luxurious.webp" alt="Sofa 1">
+                <h3>Luxury Sofa</h3>
+                <p>$499.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=16" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="classic 3 seater.webp" alt="Sofa 2">
+                <h3>Classic 3-Seater</h3>
+                <p>$599.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=17" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="modern 2.webp" alt="Sofa 3">
+                <h3>Modern Sectional</h3>
+                <p>$799.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=18" class="view-details">View Details</a>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="wooden-dining-table.webp" alt="Table 1">
+                <h3>Wooden Dining Table</h3>
+                <p>$299.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=19" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="modern-glass-table.webp" alt="Table 2">
+                <h3>Modern Glass Table</h3>
+                <p>$399.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=20" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="foldable-coffee-table.jpg" alt="Table 3">
+                <h3>Foldable Coffee Table</h3>
+                <p>$199.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=21" class="view-details">View Details</a>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="consloe-tables.webp" alt="Table 4">
+                <h3>Console Table</h3>
+                <p>$299.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=22" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="fixed-coffee-table.webp" alt="Table 5">
+                <h3>Fixed Coffee Table</h3>
+                <p>$399.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=23" class="view-details">View Details</a>
+            </div>
+            <div class="product">
+                <img src="bed-side-table.webp" alt="Table 6">
+                <h3>Bed Side Table</h3>
+                <p>$199.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="productDetails.html?id=24" class="view-details">View Details</a>
+            </div>
+        </div>
+    </section>
+    <section id="cart-container" style="display: none;">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Furniture Store. All rights reserved.</p>
+    </footer>
+
+    <script src="fur.js"></script>
+</body>
+</html>
+ 

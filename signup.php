@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
+    <base href="/DemoProj/">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="main.js" defer></script>
 </head>

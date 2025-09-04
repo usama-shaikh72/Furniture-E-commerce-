@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <base href="/DemoProj/">
     <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="main.js" defer></script>
@@ -14,7 +15,7 @@
         <h1>Login</h1>
         <p id="error-message"></p>
 
-        <form id="form" method="post" action="loginconnect.php">
+        <form id="form" method="" action="">
             <!-- Email Input -->
             <div class="input-group">
                 <label for="email-input">
@@ -36,7 +37,7 @@
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="login-btn">Login</button>
+            <button type="" class="login-btn">Login</button>
         </form>
 
         <!-- Signup Link -->

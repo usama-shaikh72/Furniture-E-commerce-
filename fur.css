@@ -5,24 +5,25 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
-    background: #333;
+    background: linear-gradient(90deg, #007bff, #28a745);
     color: #fff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;  /* Keeps it fixed at the top */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Ensures it's above other elements */
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 body {
@@ -59,11 +60,12 @@ header nav ul li a {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #444;
+    background: #0056b3;
     list-style: none;
     padding: 10px 0;
     min-width: 120px;
     border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 .dropdown-menu li {
@@ -86,35 +88,51 @@ header nav ul li a {
 }
 
 .hero {
-    background: url('bg2.jpg') no-repeat center center/cover;
-    color: black;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/DemoProj/images/bg2.jpg') no-repeat center center/cover;
+    color: white;
     text-align: center;
     padding: 250px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+    letter-spacing: 2px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 300;
     margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero button {
-    background: #ff5722;
+    background: #007bff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
 }
 
 .products {
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
-    background-color: burlywood;
+    background-color: #f8f9fa;
 }
 
 .products h2 {
@@ -130,16 +148,18 @@ header nav ul li a {
 }
 
 .product {
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    background: #f9f9f9;
-    transition: transform 0.3s;
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .product:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 .product img {
@@ -177,12 +197,19 @@ header nav ul li a {
 }
 
 .contact button {
-    background: #ff5722;
+    background: #28a745;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 24px;
+    border-radius: 25px;
     cursor: pointer;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #218838;
+    transform: scale(1.05);
 }
 
 .contact-info {
@@ -376,4 +403,59 @@ footer {
 
 .view-details:hover {
     background-color: #cc5500; /* Darker shade for hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 5px 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 150px 20px;
+    }
+
+    .about-extra {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact form {
+        flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .hero button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }

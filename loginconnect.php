@@ -4,8 +4,8 @@ session_start(); // Start the session
 include 'db_connect.php'; // Include database connection
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email = $_GET['email'];
+    $password = $_GET['password'];
 
     // Use Prepared Statement to Prevent SQL Injection
     $stmt = $conn->prepare("SELECT id, email, password FROM users WHERE email = ?");
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Verify Password
         if (password_verify($password, $user['password'])) {
-            $_SESSION['user_id'] = $user['id']; 
+            $_SESSION['user _id'] = $user['id']; 
             $_SESSION['email'] = $user['email'];
 
             // Redirect to homepage after successful login

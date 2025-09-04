@@ -7,26 +7,29 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The woodshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="fur.css">
 </head>
 <body>
     <header>
-        <div class="logo">Furniture Store</div>
-        <nav>
-            <ul>
-                <li class="dropdown">
-                    <a href="#">Products</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="chairs.html">Chairs</a></li>
-                        <li><a href="sofas.html">Sofas</a></li>
-                        <li><a href="beds.html">Beds</a></li>
-                        <li><a href="tables.html">Tables</a></li>
-                        <li><a href="all-products.html">All Products</a></li>
-                    </ul>
-                </li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <?php if (isset($_SESSION['user'])): ?>
+            <div class="logo"><i class="fas fa-couch"></i> The WoodShop</div>
+            <nav>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-th-large"></i> Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="chairs.html"><i class="fas fa-chair"></i> Chairs</a></li>
+                            <li><a href="sofas.html"><i class="fas fa-couch"></i> Sofas</a></li>
+                            <li><a href="beds.html"><i class="fas fa-bed"></i> Beds</a></li>
+                            <li><a href="tables.html"><i class="fas fa-table"></i> Tables</a></li>
+                            <li><a href="all-products.html"><i class="fas fa-list"></i> All Products</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <!-- <?php if (isset($_SESSION['user'])): ?> -->
     
 <?php else: ?>
     <li class="dropdown">
@@ -61,19 +64,19 @@ session_start();
         <h2>Featured Products</h2>
         <div class="product-grid">
             <div class="product">
-                <img src="armchair.jpg" alt="Product 1">
+                <img src="/DemoProj/\1" alt="Product 1">
                 <h3>Armchair</h3>
                 <p>$199.99</p>
                 <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="product">
-                <img src="sofa.jpg" alt="Product 2">
+                <img src="/DemoProj/\1" alt="Product 2">
                 <h3>Sofa</h3>
                 <p>$299.99</p>
                 <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="product">
-                <img src="bed.jpg" alt="Product 3">
+                <img src="/DemoProj/\1" alt="Product 3">
                 <h3>Bed</h3>
                 <p>$399.99</p>
                 <button class="add-to-cart">Add to Cart</button>
@@ -81,19 +84,19 @@ session_start();
         </div>
         <div class="product-grid">
             <div class="product">
-                <img src="table.webp" alt="Product 4">
+                <img src="/DemoProj/\1" alt="Product 4">
                 <h3>Foldable Table</h3>
                 <p>$499.99</p>
                 <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="product">
-                <img src="Wooden-Chair.jpg" alt="Product 5">
+                <img src="/DemoProj/\1" alt="Product 5">
                 <h3>Wooden Chair</h3>
                 <p>$149.99</p>
                 <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="product">
-                <img src="kingsize-bed.webp" alt="Product 6">
+                <img src="/DemoProj/\1" alt="Product 6">
                 <h3>kingsize bed</h3>
                 <p>$249.99</p>
                 <button class="add-to-cart">Add to Cart</button>
@@ -137,9 +140,12 @@ session_start();
         </form>
         
         <div class="contact-info">
-            <p>📞 Phone: +91 9224333457</p>
-            <p>📧 Email: info@TheWoodShop.com</p>
-            <p>📍 Location: Mumbai, India</p>
+            <p>📞 Phone: <button type="">solve the error</button>
+
+            <p>📧 Email:  <button type="">solve the error</button>
+</p>
+            <p>📍 Location:  <button type="">solve the error</button>
+</p>
         </div>
     </section>
 
